@@ -477,26 +477,61 @@
           autocomplete="on"
           novalidate
         >
-          <label for="user-name">Ім'я</label>
-          <input id="user-name" type="text" name="user-name" />
+          <label class="form-field-label" for="user-name">Ім'я</label>
+          <div class="form-field">
+            <input
+              class="form-field-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+            />
+            <svg class="form-field-icon" Width="12px" Height="12px">
+              <use href="./img/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
 
-          <label for="user-tel">Телефон</label>
-          <input id="user-tel" type="text" name="user-tel" />
+          <label class="form-field-label" for="user-tel">Телефон</label>
+          <div class="form-field">
+            <input
+              class="form-field-input"
+              id="user-tel"
+              type="text"
+              name="user-tel"
+            />
+            <svg class="form-field-icon" Width="12px" Height="12px">
+              <use href="./img/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
 
-          <label for="user-email">Пошта</label>
-          <input id="user-email" type="email" name="user-email" />
+          <label class="form-field-label" for="user-email">Пошта</label>
+          <div class="form-field">
+            <input
+              class="form-field-input"
+              id="user-email"
+              type="text"
+              name="user-email"
+            />
+            <svg class="form-field-icon" Width="12px" Height="12px">
+              <use href="./img/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
 
-          <label for="user-comment">Коментар</label>
+          <label class="form-field-label" for="user-comment">Коментар</label>
           <textarea
+            class="form-field-input form-field-textarea"
             name="user-comment"
             id="user-comment"
             placeholder="Введіть текст"
           ></textarea>
 
-          <label for="contract term"
-            >Погоджуюся з розсилкою та приймаю Умови договору</label
-          >
-          <input id="contract term" type="checkbox" name="contract term" />
+          <div>
+            <input id="contract term" type="checkbox" name="contract term" />
+            <label for="contract term"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a></label
+            >
+          </div>
+          <button class="form-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

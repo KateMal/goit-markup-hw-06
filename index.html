@@ -458,10 +458,32 @@
             </li>
           </ul>
         </div>
+        <form
+          class="contact-form"
+          name="contact-form"
+          autocomplete="on"
+          novalidate
+        >
+          <h3 class="social-title">Підпишіться на розсилку</h3>
+          <div class="footer-form-wrap">
+            <input
+              class="footer-input-email"
+              type="email"
+              name="footer-email-title"
+              placeholder="E-mail"
+            />
+            <button class="form-button footer-form-button" type="submit">
+              <span>Відправити</span>
+              <svg class="form-button-icon" Width="24px" Height="24px">
+                <use href="./img/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
-      <!-- <div class="backdrop is-hidden" data-modal> -->
+    <!-- <div class="backdrop" data-modal> -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <!-- close -->
@@ -470,7 +492,7 @@
             <use href="./img/icons.svg#icon-end"></use>
           </svg>
         </button>
-        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form
           class="contact-form"
           name="contact-form"
@@ -508,7 +530,7 @@
             <input
               class="form-field-input"
               id="user-email"
-              type="text"
+              type="email"
               name="user-email"
             />
             <svg class="form-field-icon" Width="12px" Height="12px">
@@ -524,11 +546,11 @@
             placeholder="Введіть текст"
           ></textarea>
 
-          <div>
+          <div class="term">
             <input id="contract term" type="checkbox" name="contract term" />
-            <label for="contract term"
+            <label class="checkbox-text" for="contract term"
               >Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a></label
+              <a class="condition-link" href="">Умови договору</a></label
             >
           </div>
           <button class="form-button" type="submit">Відправити</button>

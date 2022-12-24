@@ -436,6 +436,7 @@ body {
 .footer-elements {
   display: flex;
 }
+
 .logo.logo_footer > .logo-select {
   color: #ffffff;
 }
@@ -460,6 +461,55 @@ body {
 .contacts:hover,
 .contacts:focus {
   color: #2196f3;
+}
+
+.footer-input-email {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.footer-email-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-button.footer-form-button {
+  margin-top: 0;
+}
+.form-button-icon {
+  margin-left: 10px;
+}
+.contact-form {
+  margin-top: 12px;
+  margin-left: auto;
+}
+.footer-input-email {
+  background-color: transparent;
+}
+.footer-input-email::placeholder {
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 }
 /*============================ backdrop */
 .backdrop {
@@ -494,6 +544,7 @@ body {
   padding: 8px;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  padding: 40px;
 }
 .modal-button {
   margin-left: auto;
@@ -505,9 +556,22 @@ body {
   display: grid;
   place-items: center;
   cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 /* ====================form */
+.form-title {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #212121;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -531,9 +595,16 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field-input:focus {
   border-color: #2196f3;
+}
+
+.form-field-input + .form-field-icon {
+  fill: #212121;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field-input:focus + .form-field-icon {
   fill: #2196f3;
@@ -547,8 +618,11 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
+  font-family: "Roboto";
   color: rgba(117, 117, 117, 0.5);
+}
+.term {
+  padding-left: 12px;
 }
 .form-field {
   position: relative;
@@ -573,11 +647,19 @@ textarea {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875%;
+  display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+.condition-link {
+  color: #2196f3;
+}
+.checkbox-text {
+  color: #757575;
 }
 
 /* ```````````````````` portfolio */

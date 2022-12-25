@@ -473,8 +473,8 @@
               placeholder="E-mail"
             />
             <button class="form-button footer-form-button" type="submit">
-              <span>Відправити</span>
-              <svg class="form-button-icon" Width="24px" Height="24px">
+              <span> Підписатися</span>
+              <svg class="form-button-icon" width="24px" height="24px">
                 <use href="./img/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -482,7 +482,8 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal> -->
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <!-- close -->
@@ -492,12 +493,7 @@
           </svg>
         </button>
         <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form
-          class="contact-form"
-          name="contact-form"
-          autocomplete="on"
-          novalidate
-        >
+        <form class="contact-form" name="contact-form" autocomplete="on">
           <label class="form-field-label" for="user-name">Ім'я</label>
           <div class="form-field">
             <input
@@ -505,8 +501,9 @@
               id="user-name"
               type="text"
               name="user-name"
+              required
             />
-            <svg class="form-field-icon" Width="12px" Height="12px">
+            <svg class="form-field-icon" width="18px" height="18px">
               <use href="./img/icons.svg#icon-person-black"></use>
             </svg>
           </div>
@@ -518,8 +515,9 @@
               id="user-tel"
               type="text"
               name="user-tel"
+              required
             />
-            <svg class="form-field-icon" Width="12px" Height="12px">
+            <svg class="form-field-icon" width="18px" height="18px">
               <use href="./img/icons.svg#icon-phone-black"></use>
             </svg>
           </div>
@@ -531,8 +529,9 @@
               id="user-email"
               type="email"
               name="user-email"
+              required
             />
-            <svg class="form-field-icon" Width="12px" Height="12px">
+            <svg class="form-field-icon" width="18px" height="18px">
               <use href="./img/icons.svg#icon-email-black"></use>
             </svg>
           </div>
@@ -541,17 +540,28 @@
           <textarea
             class="form-field-input form-field-textarea"
             name="user-comment"
+            required
             id="user-comment"
             placeholder="Введіть текст"
           ></textarea>
 
           <div class="term">
-            <input id="contract term" type="checkbox" name="contract term" />
-            <label class="checkbox-text" for="contract term"
+            <input
+              class="checkbox"
+              id="contract_term"
+              type="checkbox"
+              name="contract_term"
+              required
+            />
+            <svg class="form-checbox-icon" width="18px" height="18px">
+              <use href="./img/icons.svg#icon-galka"></use>
+            </svg>
+            <label class="checkbox-text" for="contract_term"
               >Погоджуюся з розсилкою та приймаю
               <a class="condition-link" href="">Умови договору</a></label
             >
           </div>
+
           <button class="form-button" type="submit">Відправити</button>
         </form>
       </div>
